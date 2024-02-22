@@ -132,3 +132,19 @@
     text-align: center;
     cursor: pointer;
 }
+
+@media (max-width: 690px) {
+    #drum-machine {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #beat-name {
+        font-size: 3rem;
+        margin-top: 10%;
+    }
+
+    .btn-group > * {
+        margin: 5px;
+    }
+}

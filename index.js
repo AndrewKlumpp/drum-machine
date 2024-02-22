@@ -88,3 +88,44 @@ libraryOne = [
         key: 'C'
     }
 ];
+
+
+// Pad Element Generator
+function newPad(pad) {
+    const {sound, name, key} = pad; // destructures the provided pad object
+    this.newPad = document.createElement('div'); // create a div element
+    this.newPad.classList.add('drum-pad'); // add drum-pad class to the div element
+    this.newPad.setAttribute('id', key); // sets the id of the div element to the pad object key
+    this.newPad.setAttribute('type', 'button'); // sets div type to button
+    this.newPad.innerText = key; // render the key
+    this.newPad.onclick = () => {
+        playSound(sound, name); // plays the sound
+        classClick(key); // adds drum-pad-clicked class and removes it after 500ms
+    };
+    this.newPad.onmouseover = () => classHover(key); // initiates classHover function when mouse moves over button
+    this.newPad.onmouseleave = () => {
+        this.newPad.classList.remove('drum-pad-hover'); // removes drum-pad-hover class when mouse leaves button
+    };
+    padContainer.appendChild(this.newPad); // add newPad to pad-container div
+};
+
+// Play Sound Function
+const playSound = (sound, name) => {
+    sound.play(); // plays the sound (part of the sound function)
+    beatName.innerHTML = name; // displays sound name in beat-name paragraph
+};
+
+// Edit Class on Hover
+const classHover = (key) => {
+    const pad = document.getElementById(key); // get current pad id
+    pad.classList.add('drum-pad-hover'); // add drum-pad-hover class when mouse hovers over button
+};
+
+// Edit Class on Click
+const classClick = (key) => {
+    const pad = document.getElementById(key); // get current pad id
+    pad.classList.add('drum-pad-clicked'); // add drum-pad-clicked class when button is clicked
+    setTimeout(() => {
+        pad.classList.remove('drum-pad-clicked'); // removes drum-pad-clicked class after 500ms
+    }, 500)
+};

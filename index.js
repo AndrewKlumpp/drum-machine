@@ -20,3 +20,71 @@ function sound(src) {
         this.sound.pause(); // pauses the sound
     };
 };
+
+
+// First Library
+oneQ = new sound('./sounds/library1/block.wav'); // block
+oneW = new sound('./sounds/library1/bump.wav'); // bump
+oneE = new sound('./sounds/library1/cabasa.wav'); // cabasa
+oneA = new sound('./sounds/library1/clave.wav'); // clave
+oneS = new sound('./sounds/library1/conga.wav'); // conga
+oneD = new sound('./sounds/library1/cowbell.wav'); // cowbell
+oneZ = new sound('./sounds/library1/highShaker.wav'); // highShaker
+oneX = new sound('./sounds/library1/lowShaker.wav'); // lowShaker
+oneC = new sound('./sounds/library1/rip.wav'); // rip
+
+libraryOne = [
+    {
+        sound: oneQ,
+        name: 'OCCKKK!',
+        key: 'Q'
+    },
+
+    {
+        sound: oneW,
+        name: 'BUUUMN!',
+        key: 'W'
+    },
+
+    {
+        sound: oneE,
+        name: 'SCHIII!',
+        key: 'E'
+    },
+
+    {
+        sound: oneA,
+        name: 'EIIITT!',
+        key: 'A'
+    },
+
+    {
+        sound: oneS,
+        name: 'BWUUOP!',
+        key: 'S'
+    },
+
+    {
+        sound: oneD,
+        name: 'DIIIUP!',
+        key: 'D'
+    },
+
+    {
+        sound: oneZ,
+        name: 'CHIIDT!',
+        key: 'Z'
+    },
+
+    {
+        sound: oneX,
+        name: 'SCHIPP!',
+        key: 'X'
+    },
+
+    {
+        sound: oneC,
+        name: 'ENYIII!',
+        key: 'C'
+    }
+];

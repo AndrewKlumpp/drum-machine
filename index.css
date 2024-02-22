@@ -12,6 +12,7 @@
     --secondary: #ede682;
     --light: #ade498;
     --dark: #7fdbda;
+    --text: salmon;
 }
 
 .container {
@@ -50,7 +51,7 @@
     padding: 1.5%;
     font-family: var(--font-primary);
     font-weight: bold;
-    color: var(--primary);
+    color: var(--text);
     text-align: center;
     margin: 10px;
     border-radius: 25%;
@@ -65,4 +66,69 @@
     transform: translateY(-3px);
     transition: all ease 0.5s;
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+#display {
+    background: var(--dark);
+    width: 95%;
+    height: 50%;
+    border: solid var(--secondary) 3px;
+    padding: 2%;
+}
+
+#beat-name {
+    font-family: var(--font-primary);
+    font-size: 75px;
+    color: var(--text);
+    text-align: center;
+}
+
+#pad-container {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-self: flex-end;
+}
+
+.drum-pad {
+    background: var(--secondary);
+    width: 10%;
+    height: 100%;
+    border: solid var(--dark) 3px;
+    border-bottom: 0;
+    padding-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: var(--font-secondary);
+    font-weight: bolder;
+    color: var(--dark);
+    text-align: center;
+    cursor: pointer;
+}
+
+.drum-pad-hover {
+    background: var(--primary);
+    padding-top: 1%;
+    color: var(--light);
+    font-size: 5vh;
+    box-shadow: 0px -2px 20px 5px rgba(0, 0, 0, 0.4);
+    transition: all linear 0.3s;
+}
+
+.drum-pad-clicked {
+    background: var(--text);
+    width: 10%;
+    height: 100%;
+    border: solid var(--dark) 3px;
+    border-bottom: 0;
+    padding-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: var(--font-secondary);
+    font-weight: bolder;
+    color: var(--light);
+    font-size: 5vh;
+    text-align: center;
+    cursor: pointer;
 }

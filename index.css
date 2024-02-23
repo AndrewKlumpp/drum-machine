@@ -8,11 +8,11 @@
     box-sizing: border-box;
     --font-primary: 'Barriecito', sans-serif;
     --font-secondary: 'Sixtyfour', sans-serif;
-    --primary: #febf63;
-    --secondary: #ede682;
+    --primary: #FE6100;
+    --secondary: #FFC107;
     --light: #ade498;
-    --dark: #7fdbda;
-    --text: salmon;
+    --dark: #1E88E5;
+    --text: #D81B60;
 }
 
 .container {

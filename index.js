@@ -89,6 +89,71 @@ libraryOne = [
     }
 ];
 
+// Second Library
+twoQ = new sound('./sounds/library2/alert.wav'); // alert
+twoW = new sound('./sounds/library2/big.wav'); // big
+twoE = new sound('./sounds/library2/claps.wav'); // claps
+twoA = new sound('./sounds/library2/deep.wav'); // deep
+twoS = new sound('./sounds/library2/punch.wav'); // punch
+twoD = new sound('./sounds/library2/shortBass.wav'); // shortBass
+twoZ = new sound('./sounds/library2/shortClap.wav'); // shortClap
+twoX = new sound('./sounds/library2/stereoClick.wav'); // stereoClick
+twoC = new sound('./sounds/library2/tick.wav'); // tick
+libraryTwo = [
+    {
+        sound: twoQ,
+        name: 'DUUPPA!',
+        key: 'Q'
+    },
+
+    {
+        sound: twoW,
+        name: 'BUUUPH!',
+        key: 'W'
+    },
+
+    {
+        sound: twoE,
+        name: 'CLAAAP!',
+        key: 'E'
+    },
+
+    {
+        sound: twoA,
+        name: 'BOOAAP!',
+        key: 'A'
+    },
+
+    {
+        sound: twoS,
+        name: 'JIIIIP!',
+        key: 'S'
+    },
+
+    {
+        sound: twoD,
+        name: 'KNOOCK!',
+        key: 'D'
+    },
+
+    {
+        sound: twoZ,
+        name: 'CHIILT!',
+        key: 'Z'
+    },
+
+    {
+        sound: twoX,
+        name: 'DEDELE!',
+        key: 'X'
+    },
+
+    {
+        sound: twoC,
+        name: 'TIIICK!',
+        key: 'C'
+    }
+];
 
 // Pad Element Generator
 function newPad(pad) {

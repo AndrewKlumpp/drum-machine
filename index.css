@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Protest+Guerrilla&family=Sixtyfour&display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --font-primary: 'Alata', sans-serif;
-    --font-secondary: 'Nunito', sans-serif;
+    --font-primary: 'Barriecito', sans-serif;
+    --font-secondary: 'Sixtyfour', sans-serif;
     --primary: #febf63;
     --secondary: #ede682;
     --light: #ade498;

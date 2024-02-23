@@ -99,6 +99,7 @@ twoD = new sound('./sounds/library2/shortBass.wav'); // shortBass
 twoZ = new sound('./sounds/library2/shortClap.wav'); // shortClap
 twoX = new sound('./sounds/library2/stereoClick.wav'); // stereoClick
 twoC = new sound('./sounds/library2/tick.wav'); // tick
+
 libraryTwo = [
     {
         sound: twoQ,
@@ -154,6 +155,74 @@ libraryTwo = [
         key: 'C'
     }
 ];
+
+// Third Library
+threeQ = new sound('./sounds/library3/bassHit.wav'); // bassHit
+threeW = new sound('./sounds/library3/chit.wav'); // chit
+threeE = new sound('./sounds/library3/highConga.wav'); // highConga
+threeA = new sound('./sounds/library3/highTom.wav'); // highTom
+threeS = new sound('./sounds/library3/lowConga.wav'); // lowConga
+threeD = new sound('./sounds/library3/lowTom.wav'); // lowTom
+threeZ = new sound('./sounds/library3/ping.wav'); // ping
+threeX = new sound('./sounds/library3/snare.wav'); // snare
+threeC = new sound('./sounds/library3/tinCow.wav'); // tinCow
+
+libraryThree = [
+    {
+        sound: threeQ,
+        name: 'BWAAAPP!',
+        key: 'Q'
+    },
+
+    {
+        sound: threeW,
+        name: 'CHIIII!',
+        key: 'W'
+    },
+
+    {
+        sound: threeE,
+        name: 'DOOONK!',
+        key: 'E'
+    },
+
+    {
+        sound: threeA,
+        name: 'DAAAAP!',
+        key: 'A'
+    },
+
+    {
+        sound: threeS,
+        name: 'BOOONK!',
+        key: 'S'
+    },
+
+    {
+        sound: threeD,
+        name: 'PUOOPH!',
+        key: 'D'
+    },
+
+    {
+        sound: threeZ,
+        name: 'PIIING!',
+        key: 'Z'
+    },
+
+    {
+        sound: threeX,
+        name: 'PHEESH!',
+        key: 'X'
+    },
+
+    {
+        sound: threeC,
+        name: 'DUUUNK!',
+        key: 'C'
+    }
+];
+
 
 // Pad Element Generator
 function newPad(pad) {

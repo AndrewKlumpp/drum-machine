@@ -129,3 +129,38 @@ const classClick = (key) => {
         pad.classList.remove('drum-pad-clicked'); // removes drum-pad-clicked class after 500ms
     }, 500)
 };
+
+// Create Pad Function
+const createPads = (library) => {
+    while (padContainer.firstChild) {
+        padContainer.removeChild(padContainer.lastChild);
+    }
+    library.map((pad) => {
+        new newPad(pad);
+    });
+};
+
+// Select Library
+let selectedLib; // declare selectedLib variable
+
+// Render Library on First Page Load
+window.onload = () => {
+    selectedLib = libraryOne; // sets selectedLib to libraryOne on page load
+    createPads(libraryOne); // feeds libraryOne into the createPads function
+};
+
+// Render Libraries on Click
+libOne.onclick = () => {
+    selectedLib = libraryOne; // sets selectedLib to libraryOne when button is clicked
+    createPads(libraryOne); // feeds libraryOne into the createPads function
+};
+
+libTwo.onclick = () => {
+    selectedLib = libraryTwo; // sets selectedLib to libraryTwo when button is clicked
+    createPads(libraryTwo); // feeds libraryTwo into the createPads function
+};
+
+libThree.onclick = () => {
+    selectedLib = libraryThree; // sets selectedLib to libraryThree when button is clicked
+    createPads(libraryThree); // feeds libraryThree into the createPads function
+};

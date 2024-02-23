@@ -4,6 +4,75 @@ const libThree = document.getElementById('lib-3'); // library 3 button
 const beatName = document.getElementById('beat-name'); // display name paragraph
 const padContainer = document.getElementById('pad-container'); // pad container div
 
+// Pressed Key Event Handler
+const pressKeyHandler = (e) => {
+    switch (e.keyCode) {
+        case 81:
+            classClick('Q');
+            const filterQ = selectedLib.filter((pad) => pad.key === 'Q');
+            playSound(filterQ[0].sound, filterQ[0].name);
+            break;
+        case 87:
+            classClick('W');
+            const filterW = selectedLib.filter((pad) => pad.key === 'W');
+            playSound(filterW[0].sound, filterW[0].name);
+            break;
+        case 69:
+            classClick('E');
+            const filterE = selectedLib.filter((pad) => pad.key === 'E');
+            playSound(filterE[0].sound, filterE[0].name);
+            break;
+        case 65:
+            classClick('A');
+            const filterA = selectedLib.filter((pad) => pad.key === 'A');
+            playSound(filterA[0].sound, filterA[0].name);
+            break;
+        case 83:
+            classClick('S');
+            const filterS = selectedLib.filter((pad) => pad.key === 'S');
+            playSound(filterS[0].sound, filterS[0].name);
+            break;
+        case 68:
+            classClick('D');
+            const filterD = selectedLib.filter((pad) => pad.key === 'D');
+            playSound(filterD[0].sound, filterD[0].name);
+            break;
+        case 90:
+            classClick('Z');
+            const filterZ = selectedLib.filter((pad) => pad.key === 'Z');
+            playSound(filterZ[0].sound, filterZ[0].name);
+            break;
+        case 88:
+            classClick('X');
+            const filterX = selectedLib.filter((pad) => pad.key === 'X');
+            playSound(filterX[0].sound, filterX[0].name);
+            break;
+        case 67:
+            classClick('C');
+            const filterC = selectedLib.filter((pad) => pad.key === 'C');
+            playSound(filterC[0].sound, filterC[0].name);
+            break;
+        case 49:
+            selectedLib = libraryOne;
+            createPads(libraryOne);
+            break;
+        case 50:
+            selectedLib = libraryTwo;
+            createPads(libraryTwo);
+            break;
+        case 51:
+            selectedLib = libraryThree;
+            createPads(libraryThree);
+            break;
+        default:
+            console.log(`${e.keyCode} does not have a function in this App`);
+            break;
+    }
+};
+
+// Key Event Listener
+document.addEventListener('keydown', pressKeyHandler);
+
 // Audio element generator
 function sound(src) {
     this.sound = document.createElement('audio'); // create HTML audio element
